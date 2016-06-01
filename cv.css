@@ -1,0 +1,252 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face{
+    font-family : "slkscre";
+    src : url('font/Silkscreen/slkscre-webfont.eot'),
+          url('font/Silkscreen/slkscre-webfont.woff') format('woff'),
+          url('font/Silkscreen/slkscre-webfont.svg') format('svg'),
+          url('font/Silkscreen/slkscre-webfont.ttf') format('truetype');
+}
+body{
+  background-color: rgb(35, 33, 51);
+  /*background-image: url('imagesCv/fondJeu.png') no-repeat;*/
+  /*background-size: 100%;*/
+}
+#page{
+  width: 1400px;
+  margin: auto;
+}
+#contenu{
+  height: 720px;
+}
+header, footer{
+  text-align: right;
+  background-color: rgb(35, 33, 51);
+  color: rgb(61, 57, 89);
+  font-family : "slkscre", Helvetica, Arial;
+  font-size: 13px;
+}
+h1{
+  font-size: 40px;
+  padding-top: 10px;
+}
+.ligne{
+  background-color: rgb(214, 149, 11);
+  /*width: 70%;*/
+  opacity: 0;
+  height: 2px;
+  width: 0;
+  margin: auto;
+  position: relative;
+  top: 210px;
+  left: 85px;
+  z-index: 5;
+}
+#cv{
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  height: 600px;
+  /*max-width: 1400px;*/
+}
+#container{
+  height: 75px;
+  width: 60px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#perso{
+  min-width: 864px;
+  min-height: 384px;
+  position: relative;
+}
+#fondJeu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+#nivUn, #nivDeux{
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  z-index: -1;
+  overflow: hidden;
+}
+#fleche{
+  width: 70px;
+  height: 70px;
+  background-image: url('imagesCv/fleche.png');
+  position: absolute;
+  top: 500px;
+  left: 1250px;
+  text-align: center;
+  font-family : "Lucida Sans Typewriter", Helvetica, Arial;
+  font-size: 50px;
+  cursor:  pointer;
+  z-index: 1;
+}
+#play{
+  width: 288px;
+  height: 50px;
+  background-image: url('imagesCv/play.png');
+  position: absolute;
+  top: 500px;
+  left: 1050px;
+  cursor:  pointer;
+  z-index: -1;
+  opacity: 0;
+}
+#mailto{
+  width: 600px;
+  height: 50px;
+  background-image: url('imagesCv/mailto.png');
+  background-repeat: no-repeat;
+  /*background-image: 100%;*/
+  position: absolute;
+  top: 550px;
+  left: 225px;
+  cursor:  pointer;
+  z-index: -1;
+}
+#fermer{
+  width: 30px;
+  height: 30px;
+  color: rgb(35, 33, 51);
+  background-color: rgb(255, 116, 115);
+  position: absolute;
+  top: 14px;
+  left: 207px;
+  text-align: center;
+  line-height: 30px;
+  font-family: slkscre, Helvetica, Arial;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: -1;
+}
+#mauvaisJoueur{
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 2;
+}
+.logo{
+  width: 40px;
+  height: 50px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  cursor: pointer;
+  /*border: 3px solid rgb(255, 116, 115);*/
+}
+#html{
+  top: 450px;
+  left: 500px;
+  z-index: -1;
+}
+#css{
+  top: 225px;
+  left: 600px;
+  z-index: -1;
+}
+#js{
+  top: 50px;
+  left: 870px;
+  z-index: -1;
+}
+#cle{
+  top: 80px;
+  left: 380px;
+  z-index: -1;
+}
+#angular{
+  top: 50px;
+  left: 850px;
+  z-index: -2;
+}
+#bootstrap{
+  top: 60px;
+  left: 550px;
+  z-index: -2;
+}
+#jquery{
+  top: 80px;
+  left: 380px;
+  z-index: -2;
+}
+#meteor{
+  top: 185px;
+  left: 220px;
+  z-index: -2;
+}
+#mongo{
+  top: 450px;
+  left: 1010px;
+  z-index: -2;
+}
+#node{
+  top: 265px;
+  left: 325px;
+  z-index: -2;
+}
+#surprise{
+  height: 25px;
+  width: 200px;
+  position: relative;
+  top: 200px;
+  left: 600px;
+  background-color: white;
+  opacity: 0;
+  z-index: 1;
+}
+#heart1{
+  width: 50px;
+  height: 50px;
+  background-image: url("imagesCv/heart.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 1250px;
+  z-index: -1;
+}
+#heart2{
+  width: 50px;
+  height: 50px;
+  background-image: url("imagesCv/heart.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 1300px;
+  z-index: -1;
+}
+#heart3{
+  width: 50px;
+  height: 50px;
+  background-image: url("imagesCv/heart.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 1350px;
+  z-index: -1;
+}
+#message{
+  position: absolute;
+  top: 320px;
+  left: 800px;
+  z-index: -2;
+}
+#moncv{
+  position: absolute;
+  top: 470px;
+  left: 820px;
+  z-index: -2;
+}
